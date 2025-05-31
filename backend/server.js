@@ -8,8 +8,15 @@ import chatRoutes from './routes/chatBotRoute.js';
 const app = express();
 
 // Middleware
-app.use(cors());
+
 app.use(express.json());
+
+
+app.use(cors({
+  origin: [process.env.CLIENT_URL, 'http://localhost:5173'], // Allow both production and local frontend
+  methods: 'GET,POST,PUT,DELETE',
+  credentials: true 
+}));
 
 // Connect to MongoDB
 connectDB();
