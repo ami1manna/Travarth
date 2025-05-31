@@ -18,7 +18,7 @@ const CustomerDashboard = () => {
       // Get the auth token from localStorage or your auth state management
       const authToken = localStorage.getItem('authToken'); 
       
-      const response = await fetch('http://localhost:8000/api/travelplans/get-all-travel-plans', {
+      const response = await fetch('api/travelplans/get-all-travel-plans', {
         headers: {
           'Authorization': `Bearer ${authToken}`,
           'Content-Type': 'application/json'

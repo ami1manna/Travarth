@@ -295,7 +295,7 @@ export default function PlanTripPage() {
     
     try {
       // Directly store the trip data without showing flight options
-      const response = await fetch("http://localhost:8000/api/travelplans/store", {
+      const response = await fetch("/api/travelplans/store", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
