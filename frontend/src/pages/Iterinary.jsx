@@ -63,7 +63,7 @@ export default function Itinerary({ }) {
     // console.log("Fetching itinerary with ID:", id);
     try {
       const token = localStorage.getItem("authToken");
-      const response = await fetch(`http://localhost:8000/api/travelplans/get/${id}`, {
+      const response = await fetch(`/api/travelplans/get/${id}`, {
         method: "GET",
         headers: {
           "Authorization": `Bearer ${token}`,
