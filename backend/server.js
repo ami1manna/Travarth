@@ -13,7 +13,7 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: [process.env.CLIENT_URL, 'http://localhost:5173'], // Allow both production and local frontend
+  origin: ['https://travart.netlify.app', 'http://localhost:5173'], // Allow both production and local frontend
   methods: 'GET,POST,PUT,DELETE',
   credentials: true 
 }));
