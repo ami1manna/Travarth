@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Peaceful Hill Homestay",
+      "image": "/images/homestay1.jpeg",
+      "location": "Kasol",
+      "pricePerNight": "₹1200",
+      "tagline": "Hosted by locals",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Sunset View Homestay",
+      "image": "/images/homestay2.jpg",
+      "location": "Alleppey",
+      "pricePerNight": "₹1500",
+      "tagline": "By the backwaters",
+      "rating": 4.7
+    }
+  ]
+  

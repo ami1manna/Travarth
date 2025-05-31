@@ -1,0 +1,414 @@
+{
+  "title": "Kerala Backwater & Hill Station Escape",
+  "destination": "Kerala, India",
+  "dates": "20th April-25th April, 2025",
+  "duration": "6 days",
+  "startDate": "2025-04-20",
+  "endDate": "2025-04-25",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Kerala_Backwaters_Houseboat.jpg/640px-Kerala_Backwaters_Houseboat.jpg",
+  "ecoScore": 6,
+  "emergencyContact": {
+    "name": "Kerala Tourism Helpline",
+    "phone": "+91-471-2321113",
+    "email": "info@keralatourism.org"
+  },
+  "travelDetails": {
+    "departureFlight": {
+      "airline": "IndiGo",
+      "flightNumber": "6E 203",
+      "departure": "2025-04-20T08:00:00",
+      "arrival": "2025-04-20T12:30:00",
+      "from": "Mumbai Airport, Mumbai",
+      "to": "Cochin International Airport, Kochi, India"
+    },
+    "returnFlight": {
+      "airline": "SpiceJet",
+      "flightNumber": "SG 516",
+      "departure": "2025-04-25T19:00:00",
+      "arrival": "2025-04-25T21:30:00",
+      "from": "Cochin International Airport, Kochi, India",
+      "to": "Mumbai Airport, Mumbai"
+    },
+    "localTransport": {
+      "mode": "Pre-booked Taxi/Autorickshaw",
+      "details": "Arrange for a pre-booked taxi from the airport to your accommodation and for intercity travel. Use autorickshaws for short distances within the cities."
+    }
+  },
+  "accommodation": {
+    "name": "The Hosteller Kochi",
+    "address": "1/401, Calvathy Road, Fort Kochi, Kochi, Kerala 682001, India",
+    "checkIn": "2025-04-20",
+    "checkOut": "2025-04-25",
+    "amenities": [
+      "Free Wi-Fi",
+      "Restaurant",
+      "Air Conditioning",
+      "Breakfast Included",
+      "24-hour Front Desk",
+      "Shared Lounge"
+    ]
+  },
+  "estimatedCost": {
+    "flights": "$300",
+    "accommodation": "$250",
+    "activities": "$200",
+    "meals": "$250",
+    "transport": "$150",
+    "misc": "$50",
+    "total": "$1200"
+  },
+  "packingSuggestions": [
+    "Light cotton clothes",
+    "Comfortable walking shoes",
+    "Rain jacket or umbrella",
+    "Insect repellent",
+    "Sunscreen (high SPF)",
+    "Hat or cap",
+    "Sunglasses",
+    "Basic toiletries"
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2025-04-20",
+      "weather": "Humid",
+      "activities": [
+        {
+          "time": "12:30",
+          "title": "Arrival in Kochi & Transfer to Fort Kochi",
+          "description": "Arrive at Cochin International Airport (COK). Transfer to your accommodation in Fort Kochi. Check in and freshen up.",
+          "location": "Cochin International Airport (COK) to Fort Kochi",
+          "lat": 10.1525,
+          "long": 76.3984,
+          "cost": "$25",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "15:00",
+          "title": "Explore Fort Kochi",
+          "description": "Visit the Chinese Fishing Nets, St. Francis Church, and the Dutch Cemetery. Wander through the historic streets and admire the colonial architecture.",
+          "location": "Fort Kochi, Kerala",
+          "lat": 9.9627,
+          "long": 76.2441,
+          "cost": "$0",
+          "sustainableAlternative": {
+            "title": "Walking Tour of Fort Kochi",
+            "description": "Opt for a guided walking tour to learn about the history and culture of Fort Kochi from a local perspective.",
+            "cost": "$15",
+            "ecoImpact": "Supports local guides and reduces reliance on vehicles."
+          }
+        },
+        {
+          "time": "19:00",
+          "title": "Kathakali Performance",
+          "description": "Experience a traditional Kathakali dance performance, a classical Indian dance form from Kerala.",
+          "location": "Kerala Kathakali Centre, Fort Kochi",
+          "lat": 9.9627,
+          "long": 76.2441,
+          "cost": "$20",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "21:00",
+          "title": "Dinner at a Local Restaurant",
+          "description": "Enjoy a delicious Keralan dinner at a local restaurant in Fort Kochi. Try the fresh seafood and local curries.",
+          "location": "Fort Kochi Restaurants",
+          "lat": 9.9627,
+          "long": 76.2441,
+          "cost": "$30",
+          "sustainableAlternative": {
+            "title": "Dinner at Local Family Restaurant",
+            "description": "Dine at a family-owned restaurant that sources ingredients locally and supports the community",
+            "cost": "$25",
+            "ecoImpact": "Reduces waste from commercial establishments and supports local economy"
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2025-04-21",
+      "weather": "Sunny",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Backwater Cruise in Alleppey",
+          "description": "Take a scenic backwater cruise on a traditional houseboat in Alleppey (Alappuzha). Enjoy the serene views of the Kerala backwaters, villages, and coconut groves.",
+          "location": "Alleppey Backwaters",
+          "lat": 9.4981,
+          "long": 76.3388,
+          "cost": "$75",
+          "sustainableAlternative": {
+            "title": "Canoe Ride in Alleppey",
+            "description": "Take a smaller, non-motorized canoe instead of a houseboat. This offers a quieter and more eco-friendly way to experience the backwaters.",
+            "cost": "$40",
+            "ecoImpact": "Reduces noise and water pollution."
+          }
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch on the Houseboat",
+          "description": "Enjoy a traditional Keralan lunch prepared on the houseboat, featuring fresh seafood and local delicacies.",
+          "location": "Alleppey Backwaters - Onboard Houseboat",
+          "lat": 9.4981,
+          "long": 76.3388,
+          "cost": "$35",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "16:00",
+          "title": "Village Visit",
+          "description": "Visit a local village along the backwaters and interact with the residents. Learn about their traditional way of life and culture.",
+          "location": "Backwater Villages, Alleppey",
+          "lat": 9.4981,
+          "long": 76.3388,
+          "cost": "$0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "19:00",
+          "title": "Return to Kochi",
+          "description": "Return to Kochi in the evening and have dinner at a restaurant of your choice.",
+          "location": "Kochi",
+          "lat": 9.9312,
+          "long": 76.2673,
+          "cost": "$20",
+          "sustainableAlternative": {
+            "title": "Dinner at Local Family Restaurant",
+            "description": "Dine at a family-owned restaurant that sources ingredients locally and supports the community",
+            "cost": "$25",
+            "ecoImpact": "Reduces waste from commercial establishments and supports local economy"
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2025-04-22",
+      "weather": "Cloudy",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Travel to Munnar",
+          "description": "Travel from Kochi to Munnar, a scenic hill station known for its tea plantations. Enjoy the picturesque views along the way.",
+          "location": "Kochi to Munnar",
+          "lat": 10.0982,
+          "long": 77.0552,
+          "cost": "$30",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "14:00",
+          "title": "Tea Plantation Visit",
+          "description": "Visit a tea plantation and learn about the process of tea cultivation and production. Enjoy a tea tasting session.",
+          "location": "Munnar Tea Plantations",
+          "lat": 10.0982,
+          "long": 77.0552,
+          "cost": "$15",
+          "sustainableAlternative": {
+            "title": "Organic Tea Garden Visit",
+            "description": "Visit a smaller, organic tea garden that uses sustainable farming practices. Learn about their eco-friendly methods.",
+            "cost": "$20",
+            "ecoImpact": "Promotes sustainable agriculture and protects biodiversity."
+          }
+        },
+        {
+          "time": "16:00",
+          "title": "Mattupetty Dam",
+          "description": "Visit Mattupetty Dam and enjoy boating on the lake. Admire the scenic views of the surrounding hills and forests.",
+          "location": "Mattupetty Dam, Munnar",
+          "lat": 10.0982,
+          "long": 77.0552,
+          "cost": "$10",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner in Munnar",
+          "description": "Enjoy a dinner at one of the restaurants in Munnar. Sample the local cuisine of the region.",
+          "location": "Munnar Restaurants",
+          "lat": 10.0982,
+          "long": 77.0552,
+          "cost": "$25",
+          "sustainableAlternative": {
+            "title": "Dinner at Local Family Restaurant",
+            "description": "Dine at a family-owned restaurant that sources ingredients locally and supports the community",
+            "cost": "$25",
+            "ecoImpact": "Reduces waste from commercial establishments and supports local economy"
+          }
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2025-04-23",
+      "weather": "Cool",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Eravikulam National Park",
+          "description": "Visit Eravikulam National Park, home to the endangered Nilgiri Tahr. Enjoy a trek through the park and admire the scenic views of the surrounding hills.",
+          "location": "Eravikulam National Park, Munnar",
+          "lat": 10.1533,
+          "long": 77.1348,
+          "cost": "$20",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch in Munnar",
+          "description": "Have lunch at a restaurant in Munnar before continuing your exploration of the region.",
+          "location": "Munnar Restaurants",
+          "lat": 10.0982,
+          "long": 77.0552,
+          "cost": "$25",
+          "sustainableAlternative": {
+            "title": "Lunch at Local Family Restaurant",
+            "description": "Dine at a family-owned restaurant that sources ingredients locally and supports the community",
+            "cost": "$25",
+            "ecoImpact": "Reduces waste from commercial establishments and supports local economy"
+          }
+        },
+        {
+          "time": "15:00",
+          "title": "Anamudi Peak (View Point)",
+          "description": "Visit Anamudi Peak, the highest peak in South India. While access to the peak itself might be restricted, enjoy the views from the viewpoint.",
+          "location": "Anamudi Peak View Point, Munnar",
+          "lat": 10.1533,
+          "long": 77.1348,
+          "cost": "$0",
+          "sustainableAlternative": {
+            "title": "Guided Nature Walk",
+            "description": "Instead of a standard visit, take a guided nature walk in the surrounding hills to learn about the local flora and fauna.",
+            "cost": "$15",
+            "ecoImpact": "Supports local guides and promotes environmental awareness."
+          }
+        },
+        {
+          "time": "18:00",
+          "title": "Spice Garden Visit",
+          "description": "Visit a local spice garden to learn about various spices grown in the region, such as cardamom, pepper, and cinnamon.",
+          "location": "Spice Gardens in Munnar",
+          "lat": 10.0982,
+          "long": 77.0552,
+          "cost": "$10",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner in Munnar",
+          "description": "Enjoy a farewell dinner in Munnar, savoring the flavors of Kerala.",
+          "location": "Munnar Restaurants",
+          "lat": 10.0982,
+          "long": 77.0552,
+          "cost": "$25",
+          "sustainableAlternative": {
+            "title": "Dinner at Local Family Restaurant",
+            "description": "Dine at a family-owned restaurant that sources ingredients locally and supports the community",
+            "cost": "$25",
+            "ecoImpact": "Reduces waste from commercial establishments and supports local economy"
+          }
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2025-04-24",
+      "weather": "Pleasant",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Travel to Kochi",
+          "description": "Travel back to Kochi from Munnar.",
+          "location": "Munnar to Kochi",
+          "lat": 10.0982,
+          "long": 77.0552,
+          "cost": "$30",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "14:00",
+          "title": "Shopping in Kochi",
+          "description": "Explore the local markets and shops in Kochi for souvenirs, spices, and handicrafts. Visit Jew Town for antique shops and spice markets.",
+          "location": "Kochi Shopping Areas",
+          "lat": 9.9627,
+          "long": 76.2441,
+          "cost": "$0",
+          "sustainableAlternative": {
+            "title": "Fair Trade Shopping",
+            "description": "Focus on purchasing items from fair-trade shops that support local artisans and ensure ethical production.",
+            "cost": "$15",
+            "ecoImpact": "Supports sustainable livelihoods and promotes responsible consumption."
+          }
+        },
+        {
+          "time": "17:00",
+          "title": "Sunset Cruise",
+          "description": "Enjoy a relaxing sunset cruise on the Kochi harbor. Watch the sun set over the Arabian Sea.",
+          "location": "Kochi Harbour",
+          "lat": 9.9627,
+          "long": 76.2441,
+          "cost": "$30",
+          "sustainableAlternative": {
+            "title": "Harbour Walk",
+            "description": "Walk along the waterfront, taking in the harbour views and local sights, instead of a boat trip.",
+            "cost": "$0",
+            "ecoImpact": "Reduces fuel emissions."
+          }
+        },
+        {
+          "time": "20:00",
+          "title": "Farewell Dinner",
+          "description": "Enjoy a farewell dinner in Kochi, reminiscing about your trip to Kerala.",
+          "location": "Kochi Restaurants",
+          "lat": 9.9312,
+          "long": 76.2673,
+          "cost": "$30",
+          "sustainableAlternative": {
+            "title": "Dinner at Local Family Restaurant",
+            "description": "Dine at a family-owned restaurant that sources ingredients locally and supports the community",
+            "cost": "$25",
+            "ecoImpact": "Reduces waste from commercial establishments and supports local economy"
+          }
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2025-04-25",
+      "weather": "Warm",
+      "activities": [
+        {
+          "time": "10:00",
+          "title": "Explore More of Kochi (Optional)",
+          "description": "If you have some free time before your flight, revisit your favorite spots in Kochi or explore new areas. ",
+          "location": "Kochi",
+          "lat": 9.9312,
+          "long": 76.2673,
+          "cost": "$0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "16:00",
+          "title": "Transfer to Cochin International Airport",
+          "description": "Transfer to Cochin International Airport (COK) for your flight back to Mumbai.",
+          "location": "Kochi to Cochin International Airport (COK)",
+          "lat": 10.1525,
+          "long": 76.3984,
+          "cost": "$25",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "19:00",
+          "title": "Departure from Kochi",
+          "description": "Depart from Cochin International Airport (COK).",
+          "location": "Cochin International Airport (COK)",
+          "lat": 10.1525,
+          "long": 76.3984,
+          "cost": "$0",
+          "sustainableAlternative": null
+        }
+      ]
+    }
+  ]
+}

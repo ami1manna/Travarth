@@ -1,0 +1,186 @@
+{
+  "title": "Mumbai Day Trip",
+  "destination": "Mumbai, India",
+  "dates": "1st May-2nd May, 2025",
+  "duration": "2 days",
+  "startDate": "2025-05-01",
+  "endDate": "2025-05-02",
+  "image": "/placeholder.svg?height=400&width=600",
+  "ecoScore": 4,
+  "emergencyContact": {
+    "name": "Mumbai Tourism Office",
+    "phone": "+91-22-22021877",
+    "email": "info@maharashtratourism.gov.in"
+  },
+  "travelDetails": {
+    "departureFlight": {
+      "airline": "Air India",
+      "flightNumber": "AI 605",
+      "departure": "2025-05-01T06:00:00",
+      "arrival": "2025-05-01T06:30:00",
+      "from": "Chhatrapati Shivaji Maharaj International Airport, Thane",
+      "to": "Chhatrapati Shivaji Maharaj International Airport, Cst, India"
+    },
+    "returnFlight": {
+      "airline": "IndiGo",
+      "flightNumber": "6E 203",
+      "departure": "2025-05-02T22:00:00",
+      "arrival": "2025-05-02T22:30:00",
+      "from": "Chhatrapati Shivaji Maharaj International Airport, Cst, India",
+      "to": "Chhatrapati Shivaji Maharaj International Airport, Thane"
+    },
+    "localTransport": {
+      "mode": "Local Train/Taxi/Auto-rickshaw",
+      "details": "Use the Mumbai local train for affordable and efficient travel. Taxis and auto-rickshaws are readily available."
+    }
+  },
+  "accommodation": {
+    "name": "The Taj Mahal Palace",
+    "address": "Apollo Bunder, Colaba, Mumbai, Maharashtra 400001, India",
+    "checkIn": "2025-05-01",
+    "checkOut": "2025-05-02",
+    "amenities": [
+      "Swimming Pool",
+      "Free Wi-Fi",
+      "Restaurant",
+      "Spa",
+      "Fitness Center",
+      "24-hour Room Service"
+    ]
+  },
+  "estimatedCost": {
+    "flights": "₹2000",
+    "accommodation": "₹5000",
+    "activities": "₹1000",
+    "meals": "₹1000",
+    "transport": "₹500",
+    "misc": "₹500",
+    "total": "₹10000"
+  },
+  "packingSuggestions": [
+    "Light cotton clothes",
+    "Comfortable walking shoes",
+    "Sunscreen",
+    "Hat or cap",
+    "Sunglasses",
+    "Insect repellent",
+    "Hand sanitizer",
+    "Umbrella/raincoat"
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2025-05-01",
+      "weather": "Sunny",
+      "activities": [
+        {
+          "time": "13:00",
+          "title": "Lunch at Britannia & Co.",
+          "description": "Enjoy a Parsi meal at the iconic Britannia & Co. restaurant known for its berry pulao and Irani cuisine.",
+          "location": "Britannia & Co., Ballard Estate, Mumbai",
+          "lat": 18.9326,
+          "long": 72.8344,
+          "cost": "₹500",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "15:00",
+          "title": "Visit Chhatrapati Shivaji Maharaj Terminus (CST)",
+          "description": "Explore the historical Chhatrapati Shivaji Maharaj Terminus (CST), a UNESCO World Heritage Site and a masterpiece of Victorian Gothic architecture.",
+          "location": "Chhatrapati Shivaji Maharaj Terminus, Mumbai",
+          "lat": 18.9401,
+          "long": 72.8348,
+          "cost": "₹0",
+          "sustainableAlternative": {
+            "title": "Walking Tour of CST Area",
+            "description": "Join a guided walking tour to learn about the history and architecture of CST and surrounding heritage buildings.",
+            "cost": "₹200",
+            "ecoImpact": "Reduces carbon footprint compared to motorized transport and supports local guides."
+          }
+        },
+        {
+          "time": "18:00",
+          "title": "Gateway of India & Marine Drive",
+          "description": "Visit the iconic Gateway of India and take a stroll along Marine Drive, also known as the Queen's Necklace, enjoying the sunset.",
+          "location": "Gateway of India & Marine Drive, Mumbai",
+          "lat": 18.922,
+          "long": 72.8347,
+          "cost": "₹0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner at Leopold Cafe",
+          "description": "Have dinner at Leopold Cafe, a historic restaurant that has been serving patrons since 1871.",
+          "location": "Leopold Cafe, Colaba Causeway, Mumbai",
+          "lat": 18.9225,
+          "long": 72.8315,
+          "cost": "₹500",
+          "sustainableAlternative": {
+            "title": "Explore Street food",
+            "description": "Eating at local vendors reduces resources and supports the community",
+            "cost": "₹300",
+            "ecoImpact": "Reduces waste from commercial establishments and supports local economy"
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2025-05-02",
+      "weather": "Cloudy",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Visit Elephanta Caves",
+          "description": "Take a ferry to Elephanta Island and explore the ancient cave temples dedicated to Lord Shiva, a UNESCO World Heritage Site.",
+          "location": "Elephanta Island, Mumbai",
+          "lat": 18.9659,
+          "long": 72.9323,
+          "cost": "₹500",
+          "sustainableAlternative": {
+            "title": "Visit Kanheri Caves",
+            "description": "Avoid boating, visit a location on land. Explore the Kanheri Caves.",
+            "cost": "₹200",
+            "ecoImpact": "Reduces water footprint of boating"
+          }
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at Cafe Military",
+          "description": "Relish non-vegetarian delicacies at Cafe Military, a popular restaurant known for its flavorful dishes.",
+          "location": "Cafe Military, Fort, Mumbai",
+          "lat": 18.9345,
+          "long": 72.8357,
+          "cost": "₹500",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "15:00",
+          "title": "Visit Mani Bhavan Gandhi Museum",
+          "description": "Learn about the life and work of Mahatma Gandhi at Mani Bhavan Gandhi Museum, a former residence of Gandhi during his visits to Mumbai.",
+          "location": "Mani Bhavan Gandhi Museum, Gamdevi, Mumbai",
+          "lat": 18.9606,
+          "long": 72.8194,
+          "cost": "₹0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "18:00",
+          "title": "Shopping at Colaba Causeway",
+          "description": "Explore the vibrant Colaba Causeway market and shop for souvenirs, clothing, and handicrafts.",
+          "location": "Colaba Causeway, Mumbai",
+          "lat": 18.9225,
+          "long": 72.8315,
+          "cost": "₹0",
+          "sustainableAlternative": {
+            "title": "Support local artisans",
+            "description": "Instead of shopping look for organizations that directly help the artisans",
+            "cost": "₹0",
+            "ecoImpact": "Supports local economy, reduces import"
+          }
+        }
+      ]
+    }
+  ]
+}

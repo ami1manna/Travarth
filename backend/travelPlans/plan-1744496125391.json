@@ -1,0 +1,176 @@
+{
+  "title": "Mumbai CST Exploration",
+  "destination": "Mumbai CST, India",
+  "dates": "1st May-2nd May, 2025",
+  "duration": "2 days",
+  "startDate": "2025-05-01",
+  "endDate": "2025-05-02",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Chhatrapati_Shivaji_Terminus_Mumbai_India.jpg/600px-Chhatrapati_Shivaji_Terminus_Mumbai_India.jpg",
+  "ecoScore": 6,
+  "emergencyContact": {
+    "name": "Mumbai Police Control Room",
+    "phone": "+91-22-22620111",
+    "email": "cp.mumbai@mahapolice.gov.in"
+  },
+  "travelDetails": {
+    "departureFlight": {
+      "airline": "Air India",
+      "flightNumber": "AI 610",
+      "departure": "2025-05-01T12:00:00",
+      "arrival": "2025-05-01T12:30:00",
+      "from": "Chhatrapati Shivaji Maharaj International Airport, Thane",
+      "to": "Chhatrapati Shivaji Maharaj Terminus, Cst, India"
+    },
+    "returnFlight": {
+      "airline": "IndiGo",
+      "flightNumber": "6E 203",
+      "departure": "2025-05-02T19:00:00",
+      "arrival": "2025-05-02T19:30:00",
+      "from": "Chhatrapati Shivaji Maharaj Terminus, Cst, India",
+      "to": "Chhatrapati Shivaji Maharaj International Airport, Thane"
+    },
+    "localTransport": {
+      "mode": "Local Train/Taxi/Auto-rickshaw",
+      "details": "Utilize Mumbai's extensive local train network or opt for taxis/auto-rickshaws for shorter distances. Download ride-sharing apps for convenience."
+    }
+  },
+  "accommodation": {
+    "name": "The Taj Mahal Palace, Mumbai",
+    "address": "Apollo Bunder, Colaba, Mumbai, Maharashtra 400001, India",
+    "checkIn": "2025-05-01",
+    "checkOut": "2025-05-02",
+    "amenities": [
+      "Swimming Pool",
+      "Free Wi-Fi",
+      "Restaurant",
+      "Spa",
+      "Fitness Center",
+      "24-hour Room Service"
+    ]
+  },
+  "estimatedCost": {
+    "flights": "₹2000",
+    "accommodation": "₹6000",
+    "activities": "₹1000",
+    "meals": "₹800",
+    "transport": "₹200",
+    "misc": "₹0",
+    "total": "₹10000"
+  },
+  "packingSuggestions": [
+    "Light cotton clothes",
+    "Comfortable walking shoes",
+    "Sunscreen",
+    "Hat or cap",
+    "Sunglasses",
+    "Small backpack",
+    "Reusable water bottle",
+    "Basic toiletries"
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2025-05-01",
+      "weather": "Sunny",
+      "activities": [
+        {
+          "time": "13:00",
+          "title": "Arrival at CST & Hotel Check-in",
+          "description": "Arrive at Chhatrapati Shivaji Terminus. Take a pre-booked taxi/local train to The Taj Mahal Palace. Check in and freshen up.",
+          "location": "Chhatrapati Shivaji Terminus to The Taj Mahal Palace",
+          "lat": 18.922,
+          "long": 72.8347,
+          "cost": "₹100",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "15:00",
+          "title": "Gateway of India Visit",
+          "description": "Visit the iconic Gateway of India, a historical monument overlooking the Arabian Sea.",
+          "location": "Gateway of India, Mumbai",
+          "lat": 18.922,
+          "long": 72.8347,
+          "cost": "₹0",
+          "sustainableAlternative": {
+            "title": "Walking Tour of Colaba",
+            "description": "Explore the Colaba area on foot with a local guide, learning about its history and culture while reducing carbon emissions.",
+            "cost": "₹150",
+            "ecoImpact": "Supports local guides and reduces reliance on motorized transport."
+          }
+        },
+        {
+          "time": "18:00",
+          "title": "Dinner at Leopold Cafe",
+          "description": "Enjoy dinner at Leopold Cafe, a historic restaurant known for its ambiance and diverse menu.",
+          "location": "Leopold Cafe, Colaba",
+          "lat": 18.9218,
+          "long": 72.8327,
+          "cost": "₹500",
+          "sustainableAlternative": {
+            "title": "Dinner at Local Family Restaurant",
+            "description": "Dine at a family-owned restaurant that sources ingredients locally and supports the community",
+            "cost": "₹400",
+            "ecoImpact": "Reduces waste from commercial establishments and supports local economy"
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2025-05-02",
+      "weather": "Rainy",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Chhatrapati Shivaji Maharaj Terminus Tour",
+          "description": "Explore the magnificent Chhatrapati Shivaji Maharaj Terminus (CST), a UNESCO World Heritage Site, known for its Victorian Gothic architecture.",
+          "location": "Chhatrapati Shivaji Maharaj Terminus",
+          "lat": 18.9401,
+          "long": 72.8348,
+          "cost": "₹50",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "11:00",
+          "title": "Visit Dr. Bhau Daji Lad Mumbai City Museum",
+          "description": "Visit Dr. Bhau Daji Lad Mumbai City Museum to learn about the history and culture of Mumbai.",
+          "location": "Dr. Bhau Daji Lad Mumbai City Museum",
+          "lat": 19.0347,
+          "long": 72.8473,
+          "cost": "₹100",
+          "sustainableAlternative": {
+            "title": "Visit Mani Bhavan Gandhi Museum",
+            "description": "Visit Mani Bhavan Gandhi Museum and learn about Mahatma Gandhi's life and work.",
+            "cost": "₹0",
+            "ecoImpact": "Learn more about sustainable and simple living, and reduce your carbon footprint while visiting."
+          }
+        },
+        {
+          "time": "14:00",
+          "title": "Lunch at Britannia & Co.",
+          "description": "Enjoy lunch at Britannia & Co., a legendary Parsi restaurant known for its berry pulav.",
+          "location": "Britannia & Co., Ballard Estate",
+          "lat": 18.9299,
+          "long": 72.8408,
+          "cost": "₹200",
+          "sustainableAlternative": {
+            "title": "Lunch at a Community Kitchen",
+            "description": "Have lunch at a community kitchen, where meals are prepared with locally sourced ingredients and promote sustainable practices.",
+            "cost": "₹150",
+            "ecoImpact": "Supports local farmers, reduces food waste, and promotes a sense of community."
+          }
+        },
+        {
+          "time": "17:00",
+          "title": "Departure from Mumbai",
+          "description": "Depart from Chhatrapati Shivaji Maharaj Terminus for your return journey.",
+          "location": "Chhatrapati Shivaji Maharaj Terminus",
+          "lat": 18.9401,
+          "long": 72.8348,
+          "cost": "₹0",
+          "sustainableAlternative": null
+        }
+      ]
+    }
+  ]
+}

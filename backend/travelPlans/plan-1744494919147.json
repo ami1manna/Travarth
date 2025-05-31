@@ -1,0 +1,308 @@
+{
+  "title": "Goan Delight for Two",
+  "destination": "Goa, India",
+  "dates": "20th April-24th April, 2025",
+  "duration": "5 days",
+  "startDate": "2025-04-20",
+  "endDate": "2025-04-24",
+  "image": "/placeholder.svg?height=400&width=600",
+  "ecoScore": 6,
+  "emergencyContact": {
+    "name": "Goa Tourism Helpline",
+    "phone": "+91-832-2427701",
+    "email": "info.goa@nic.in"
+  },
+  "travelDetails": {
+    "departureFlight": {
+      "airline": "IndiGo",
+      "flightNumber": "6E 6005",
+      "departure": "2025-04-20T06:00:00",
+      "arrival": "2025-04-20T07:15:00",
+      "from": "Chhatrapati Shivaji Maharaj International Airport, Mumbai",
+      "to": "Dabolim Airport, Goa, India"
+    },
+    "returnFlight": {
+      "airline": "SpiceJet",
+      "flightNumber": "SG 268",
+      "departure": "2025-04-24T20:00:00",
+      "arrival": "2025-04-24T21:15:00",
+      "from": "Dabolim Airport, Goa, India",
+      "to": "Chhatrapati Shivaji Maharaj International Airport, Mumbai"
+    },
+    "localTransport": {
+      "mode": "Pre-booked Taxi/Scooter Rentals",
+      "details": "Arrange for a pre-booked taxi from the airport to your accommodation. Consider renting scooters for local travel, ensuring valid license and helmet use."
+    }
+  },
+  "accommodation": {
+    "name": "Casa Vagator",
+    "address": "Vagator, Goa 403509, India",
+    "checkIn": "2025-04-20",
+    "checkOut": "2025-04-24",
+    "amenities": [
+      "Swimming Pool",
+      "Free Wi-Fi",
+      "Restaurant",
+      "Air Conditioning",
+      "Bar"
+    ]
+  },
+  "estimatedCost": {
+    "flights": "$300",
+    "accommodation": "$500",
+    "activities": "$300",
+    "meals": "$500",
+    "transport": "$200",
+    "misc": "$200",
+    "total": "$2000"
+  },
+  "packingSuggestions": [
+    "Light cotton clothes",
+    "Swimwear",
+    "Sunscreen (high SPF)",
+    "Hat or cap",
+    "Sunglasses",
+    "Comfortable footwear",
+    "Insect repellent",
+    "Basic toiletries",
+    "Reusable water bottle",
+    "Power bank"
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2025-04-20",
+      "weather": "Sunny",
+      "activities": [
+        {
+          "time": "07:15",
+          "title": "Arrival in Goa & Transfer to Vagator",
+          "description": "Arrive at Dabolim Airport (GOI). Meet your pre-booked taxi and transfer to Casa Vagator in North Goa. Check in and freshen up.",
+          "location": "Dabolim Airport (GOI) to Vagator",
+          "cost": "$35",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at Curlies",
+          "description": "Enjoy a leisurely lunch at Curlies Beach Shack known for its seafood and scenic views.",
+          "location": "Curlies Beach Shack, Anjuna Beach",
+          "cost": "$40",
+          "sustainableAlternative": {
+            "title": "Explore Local Goan Thali at a Restaurant",
+            "description": "Visit a Local Goan Restaurant and enjoy the Goan Thali, where all the ingredients are locally sourced",
+            "cost": "$35",
+            "ecoImpact": "Help local Goan community and their business to flourish."
+          }
+        },
+        {
+          "time": "16:00",
+          "title": "Vagator Beach Exploration",
+          "description": "Explore the cliffs and rock formations of Vagator Beach. Enjoy the sunset views from Chapora Fort.",
+          "location": "Vagator Beach & Chapora Fort",
+          "cost": "$0",
+          "sustainableAlternative": {
+            "title": "Beach Clean-up",
+            "description": "Dedicate an hour to cleaning up the beach. Bring your own gloves and trash bags.",
+            "cost": "$0",
+            "ecoImpact": "Reduces pollution and protects marine life."
+          }
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner at Antares",
+          "description": "Enjoy fine dining with a view at Antares, a restaurant known for its modern European cuisine and vibrant atmosphere.",
+          "location": "Antares, Vagator",
+          "cost": "$60",
+          "sustainableAlternative": null
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2025-04-21",
+      "weather": "Sunny",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Anjuna Flea Market (Wednesday)",
+          "description": "Visit the famous Anjuna Flea Market for souvenirs, clothes, and local handicrafts. (Market only open on Wednesdays)",
+          "location": "Anjuna Flea Market",
+          "cost": "$20",
+          "sustainableAlternative": {
+            "title": "Visit a Local Artisan Workshop",
+            "description": "Instead of the flea market, visit a local artisan workshop to buy directly from the makers, supporting fair trade practices.",
+            "cost": "$25",
+            "ecoImpact": "Promotes sustainable livelihoods and ethical consumerism."
+          }
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at Artjuna",
+          "description": "Have lunch at Artjuna, a cafe known for its healthy and organic food options.",
+          "location": "Artjuna, Anjuna",
+          "cost": "$40",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "15:00",
+          "title": "Spice Plantation Tour",
+          "description": "Take a guided tour of a local spice plantation. Learn about the different spices grown in Goa and enjoy a traditional Goan lunch.",
+          "location": "Sahakari Spice Farms",
+          "cost": "$50",
+          "sustainableAlternative": {
+            "title": "Visit a Local Farm",
+            "description": "Visit a local farm that promotes organic farming and learn about sustainable agriculture practices.",
+            "cost": "$45",
+            "ecoImpact": "Reduces the impact of commercial agriculture on the enviornment."
+          }
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner at Thalassa",
+          "description": "Enjoy a Greek dinner with stunning sunset views at Thalassa. (Reservations recommended)",
+          "location": "Thalassa, Vagator",
+          "cost": "$70",
+          "sustainableAlternative": null
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2025-04-22",
+      "weather": "Hot",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Watersports at Baga Beach",
+          "description": "Head to Baga Beach and enjoy various water sports activities like parasailing, jet skiing, and banana boat rides.",
+          "location": "Baga Beach",
+          "cost": "$60",
+          "sustainableAlternative": {
+            "title": "Kayaking in the Backwaters",
+            "description": "Enjoy a peaceful kayaking trip through the Goan backwaters. Observe the local wildlife and mangrove ecosystems.",
+            "cost": "$50",
+            "ecoImpact": "Promotes eco-tourism and supports local guides."
+          }
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at Britto's",
+          "description": "Have lunch at Britto's, a popular beach shack on Baga Beach known for its Goan and Continental cuisine.",
+          "location": "Britto's, Baga Beach",
+          "cost": "$45",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "16:00",
+          "title": "Explore Calangute",
+          "description": "Visit Calangute Beach, explore the local shops, and enjoy the bustling atmosphere.",
+          "location": "Calangute Beach",
+          "cost": "$0",
+          "sustainableAlternative": {
+            "title": "Explore the Local Churches",
+            "description": "Explore the local heritage and historic churches",
+            "cost": "$0",
+            "ecoImpact": "Preserves history and minimizes travel."
+          }
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner at Fisherman's Wharf",
+          "description": "Enjoy a seafood dinner at Fisherman's Wharf, known for its fresh catches and Goan specialties.",
+          "location": "Fisherman's Wharf, Calangute",
+          "cost": "$65",
+          "sustainableAlternative": null
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2025-04-23",
+      "weather": "Hot",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Dudhsagar Falls Trip",
+          "description": "Take a day trip to Dudhsagar Falls, one of India's tallest waterfalls. Enjoy a jeep safari through the jungle and a swim in the natural pool.",
+          "location": "Dudhsagar Falls",
+          "cost": "$80",
+          "sustainableAlternative": {
+            "title": "Nature Walk at Bhagwan Mahavir Wildlife Sanctuary",
+            "description": "Instead of visiting the falls, take a guided nature walk through the Bhagwan Mahavir Wildlife Sanctuary to observe local flora and fauna.",
+            "cost": "$40",
+            "ecoImpact": "Reduces the environmental impact of jeep safaris and promotes wildlife conservation."
+          }
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch Near Dudhsagar (Included in Trip)",
+          "description": "Lunch will be provided as part of the Dudhsagar Falls tour.",
+          "location": "Near Dudhsagar Falls",
+          "cost": "$0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "18:00",
+          "title": "Return to Vagator",
+          "description": "Travel back to your accommodation in Vagator.",
+          "location": "Vagator",
+          "cost": "$35",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "20:00",
+          "title": "Farewell Dinner at Pisco by the Cliff",
+          "description": "Enjoy the last dinner at a restaurant that offers great food and service.",
+          "location": "Pisco by the Cliff, Vagator",
+          "cost": "$60",
+          "sustainableAlternative": null
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2025-04-24",
+      "weather": "Sunny",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Morning at Leisure",
+          "description": "Enjoy a leisurely morning at your accommodation. Relax by the pool, have breakfast, or take a walk around the neighborhood.",
+          "location": "Casa Vagator",
+          "cost": "$0",
+          "sustainableAlternative": {
+            "title": "Visit a Local Charity",
+            "description": "Spend a few hours volunteering at a local charity or NGO.",
+            "cost": "$0",
+            "ecoImpact": "Contributes to community development and social welfare."
+          }
+        },
+        {
+          "time": "12:00",
+          "title": "Check Out",
+          "description": "Check out from Casa Vagator.",
+          "location": "Casa Vagator",
+          "cost": "$0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at Vinayak Family Restaurant",
+          "description": "Have lunch at a restaurant of your choice, or visit Vinayak Family Restaurant",
+          "location": "Anjuna",
+          "cost": "$40",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "17:00",
+          "title": "Transfer to Airport",
+          "description": "Transfer to Dabolim Airport for your departure.",
+          "location": "Vagator to Dabolim Airport (GOI)",
+          "cost": "$35",
+          "sustainableAlternative": null
+        }
+      ]
+    }
+  ]
+}

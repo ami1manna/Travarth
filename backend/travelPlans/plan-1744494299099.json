@@ -1,0 +1,297 @@
+{
+  "title": "Goa Adventure for Two",
+  "destination": "Goa, India",
+  "dates": "20th April-24th April, 2025",
+  "duration": "5 days",
+  "startDate": "2025-04-20",
+  "endDate": "2025-04-24",
+  "image": "/placeholder.svg?height=400&width=600",
+  "ecoScore": 5,
+  "emergencyContact": {
+    "name": "Goa Tourism Helpline",
+    "phone": "+91-832-2427587",
+    "email": "goa-tourism@nic.in"
+  },
+  "travelDetails": {
+    "departureFlight": {
+      "airline": "IndiGo",
+      "flightNumber": "6E 6103",
+      "departure": "2025-04-20T06:00:00",
+      "arrival": "2025-04-20T07:15:00",
+      "from": "Chhatrapati Shivaji Maharaj International Airport, Mumbai",
+      "to": "Dabolim Airport, Goa, India"
+    },
+    "returnFlight": {
+      "airline": "SpiceJet",
+      "flightNumber": "SG 270",
+      "departure": "2025-04-24T20:00:00",
+      "arrival": "2025-04-24T21:15:00",
+      "from": "Dabolim Airport, Goa, India",
+      "to": "Chhatrapati Shivaji Maharaj International Airport, Mumbai"
+    },
+    "localTransport": {
+      "mode": "Pre-booked Taxi/Scooter Rentals",
+      "details": "Arrange for a pre-booked taxi from the airport to your accommodation. Consider renting scooters for local travel."
+    }
+  },
+  "accommodation": {
+    "name": "Resort Rio",
+    "address": "Tambudki, Arpora, Bardez, Goa 403518, India",
+    "checkIn": "2025-04-20",
+    "checkOut": "2025-04-24",
+    "amenities": [
+      "Swimming Pool",
+      "Free Wi-Fi",
+      "Restaurant",
+      "Spa",
+      "Fitness Center",
+      "Shuttle Service"
+    ]
+  },
+  "estimatedCost": {
+    "flights": "$400",
+    "accommodation": "$800",
+    "activities": "$300",
+    "meals": "$400",
+    "transport": "$100",
+    "misc": "$100",
+    "total": "$2100"
+  },
+  "packingSuggestions": [
+    "Light cotton clothes",
+    "Swimwear",
+    "Sunscreen (high SPF)",
+    "Hat or cap",
+    "Sunglasses",
+    "Comfortable footwear",
+    "Insect repellent",
+    "Basic toiletries",
+    "Reusable water bottle",
+    "Power bank"
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2025-04-20",
+      "weather": "Hot",
+      "activities": [
+        {
+          "time": "07:15",
+          "title": "Arrival in Goa & Transfer to Arpora",
+          "description": "Arrive at Dabolim Airport (GOI). Meet your pre-booked taxi and transfer to Resort Rio in Arpora. Check in and freshen up.",
+          "location": "Dabolim Airport (GOI) to Arpora",
+          "cost": "$35",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at Souza Lobo",
+          "description": "Enjoy a delicious Non-Veg Goan lunch at the iconic Souza Lobo Restaurant. Try their famous seafood dishes.",
+          "location": "Souza Lobo, Calangute",
+          "cost": "$50",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "16:00",
+          "title": "Explore Calangute Beach",
+          "description": "Spend the afternoon exploring the famous Calangute Beach. Enjoy swimming or simply relax by the shore.",
+          "location": "Calangute Beach, Goa",
+          "cost": "$0",
+          "sustainableAlternative": {
+            "title": "Beach Clean-up",
+            "description": "Participate in a local beach clean-up drive to help preserve the marine environment.",
+            "cost": "$0",
+            "ecoImpact": "Reduces pollution and protects marine life."
+          }
+        },
+        {
+          "time": "19:30",
+          "title": "Dinner at Infantaria",
+          "description": "Enjoy a Goan dinner at Infantaria",
+          "location": "Infantaria, Calangute",
+          "cost": "$40",
+          "sustainableAlternative": null
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2025-04-21",
+      "weather": "Hot",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Visit Fort Aguada",
+          "description": "Explore the historic Fort Aguada, offering stunning views of the Arabian Sea.",
+          "location": "Fort Aguada, Candolim",
+          "cost": "$10",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch at Fisherman's Wharf",
+          "description": "Enjoy a delicious Non-Veg lunch at Fisherman's Wharf, known for its Goan and seafood specialties.",
+          "location": "Fisherman's Wharf, Panjim",
+          "cost": "$60",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "15:00",
+          "title": "Explore Panjim City",
+          "description": "Take a stroll through the charming streets of Panjim, visit the Immaculate Conception Church, and explore the Latin Quarter (Fontainhas).",
+          "location": "Panjim City",
+          "cost": "$0",
+          "sustainableAlternative": {
+            "title": "Walking Tour of Fontainhas",
+            "description": "Take a guided walking tour of Fontainhas to learn about its history and culture.",
+            "cost": "$20",
+            "ecoImpact": "Supports local guides and reduces reliance on motorized transport within the heritage area."
+          }
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner at The Black Sheep Bistro",
+          "description": "Enjoy Dinner at The Black Sheep Bistro",
+          "location": "The Black Sheep Bistro, Panjim",
+          "cost": "$60",
+          "sustainableAlternative": null
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2025-04-22",
+      "weather": "Hot",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Visit Dudhsagar Falls",
+          "description": "Embark on a day trip to Dudhsagar Falls, one of India's tallest waterfalls. Enjoy the scenic jeep ride through the forest.",
+          "location": "Dudhsagar Falls",
+          "cost": "$80",
+          "sustainableAlternative": {
+            "title": "Spice Plantation Tour",
+            "description": "Visit a local spice plantation and learn about the cultivation of various spices. Enjoy a traditional Goan lunch made with fresh ingredients.",
+            "cost": "$40",
+            "ecoImpact": "Supports local agriculture and reduces the environmental impact of long-distance travel to Dudhsagar."
+          }
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch (Included in Dudhsagar trip or Spice Plantation)",
+          "description": "Lunch will be provided",
+          "location": "Dudhsagar or Spice Plantation",
+          "cost": "$0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "17:00",
+          "title": "Return to Arpora",
+          "description": "Return to Arpora, relax at the resort",
+          "location": "Arpora",
+          "cost": "$0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner at A Reverie",
+          "description": "Dinner at A Reverie",
+          "location": "A Reverie, Calangute",
+          "cost": "$70",
+          "sustainableAlternative": null
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2025-04-23",
+      "weather": "Hot",
+      "activities": [
+        {
+          "time": "10:00",
+          "title": "Baga Beach",
+          "description": "Enjoy the Morning at Baga Beach",
+          "location": "Baga Beach",
+          "cost": "$0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at Britto's",
+          "description": "Enjoy lunch at Britto's",
+          "location": "Britto's, Baga",
+          "cost": "$60",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "16:00",
+          "title": "Anjuna Flea Market",
+          "description": "Shopping at Anjuna Flea Market",
+          "location": "Anjuna",
+          "cost": "$20",
+          "sustainableAlternative": {
+            "title": "Shop at Local Handicraft Stores",
+            "description": "Visit stores that support local artisans",
+            "cost": "$20",
+            "ecoImpact": "Supports the local economy"
+          }
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner at Curlies",
+          "description": "Have dinner at Curlies",
+          "location": "Curlies, Anjuna",
+          "cost": "$65",
+          "sustainableAlternative": null
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2025-04-24",
+      "weather": "Hot",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Relax at the Resort",
+          "description": "Spend the morning relaxing by the pool or enjoying the amenities at Resort Rio.",
+          "location": "Resort Rio, Arpora",
+          "cost": "$0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "12:00",
+          "title": "Check Out",
+          "description": "Check out from Resort Rio.",
+          "location": "Resort Rio, Arpora",
+          "cost": "$0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at Vinayak Family Restaurant",
+          "description": "Lunch at Vinayak Family Restaurant.",
+          "location": "Vinayak Family Restaurant, Assagao",
+          "cost": "$40",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "16:00",
+          "title": "Transfer to Airport",
+          "description": "Transfer to Airport",
+          "location": "Dabolim Airport, Goa",
+          "cost": "$35",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "20:00",
+          "title": "Departure",
+          "description": "Departure from Goa",
+          "location": "Dabolim Airport, Goa",
+          "cost": "$0",
+          "sustainableAlternative": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Kiran Pottery",
+      "image": "/images/pottery.jpeg",
+      "craft": "Terracotta",
+      "location": "Kumbharwada, Pune",
+      "priceRange": "₹200 - ₹1500",
+      "rating": 4.7
+    },
+    {
+      "id": 2,
+      "name": "Meena Handloom",
+      "image": "/images/handloom.jpg",
+      "craft": "Handwoven Textiles",
+      "location": "Banaras",
+      "priceRange": "₹500 - ₹5000",
+      "rating": 4.9
+    }
+  ]
+  

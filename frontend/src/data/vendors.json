@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Ravi's Chaat Stall",
+      "image": "/images/chaat.jpg",
+      "tagline": "Famous Chaat since 1995",
+      "category": "Snacks",
+      "location": "Varanasi Ghat Market",
+      "rating": 4.6
+    },
+    {
+      "id": 2,
+      "name": "Seema's Bhel Puri",
+      "image": "/images/bhelpuri.jpg",
+      "tagline": "Fresh and spicy bhel",
+      "category": "Street Food",
+      "location": "Mumbai Chowpatty",
+      "rating": 4.4
+    }
+  ]
+  

@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "Anjali Sharma",
+      "specialty": "Heritage Walks",
+      "languages": ["Hindi", "English"],
+      "price": "₹500",
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "name": "Rakesh Mehta",
+      "specialty": "Wildlife Tours",
+      "languages": ["Hindi", "Marathi"],
+      "price": "₹800",
+      "rating": 4.6
+    }
+  ]
+  

@@ -1,0 +1,191 @@
+{
+  "title": "Mumbai Coastal Escape",
+  "destination": "Mumbai, India",
+  "dates": "1st May-2nd May, 2025",
+  "duration": "2 days",
+  "startDate": "2025-05-01",
+  "endDate": "2025-05-02",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Mumbai_skyline_at_night.jpg/600px-Mumbai_skyline_at_night.jpg",
+  "ecoScore": 4,
+  "emergencyContact": {
+    "name": "Mumbai Police",
+    "phone": "+91-22-22620111",
+    "email": "controlroom@mumbaipolice.org"
+  },
+  "travelDetails": {
+    "departureFlight": {
+      "airline": "Air India",
+      "flightNumber": "AI 611",
+      "departure": "2025-05-01T10:00:00",
+      "arrival": "2025-05-01T11:00:00",
+      "from": "Chhatrapati Shivaji Maharaj International Airport, Thane",
+      "to": "Chhatrapati Shivaji Maharaj International Airport, Mumbai, India"
+    },
+    "returnFlight": {
+      "airline": "IndiGo",
+      "flightNumber": "6E 203",
+      "departure": "2025-05-02T20:00:00",
+      "arrival": "2025-05-02T21:00:00",
+      "from": "Chhatrapati Shivaji Maharaj International Airport, Mumbai, India",
+      "to": "Chhatrapati Shivaji Maharaj International Airport, Thane"
+    },
+    "localTransport": {
+      "mode": "Pre-paid Taxi/Local Train",
+      "details": "Use pre-paid taxis or app-based ride services for convenient airport transfers. Consider using the efficient local train network for travel within the city."
+    }
+  },
+  "accommodation": {
+    "name": "The Taj Mahal Palace, Mumbai",
+    "address": "Apollo Bunder, Colaba, Mumbai, Maharashtra 400001, India",
+    "checkIn": "2025-05-01",
+    "checkOut": "2025-05-02",
+    "amenities": [
+      "Swimming Pool",
+      "Free Wi-Fi",
+      "Restaurant",
+      "Spa",
+      "Fitness Center",
+      "Harbour View"
+    ]
+  },
+  "estimatedCost": {
+    "flights": "₹4000",
+    "accommodation": "₹3000",
+    "activities": "₹1000",
+    "meals": "₹1500",
+    "transport": "₹500",
+    "misc": "₹300",
+    "total": "₹10300"
+  },
+  "packingSuggestions": [
+    "Light cotton clothes",
+    "Comfortable walking shoes",
+    "Sunscreen",
+    "Hat or cap",
+    "Sunglasses",
+    "Insect repellent",
+    "Basic toiletries",
+    "Umbrella/Raincoat"
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2025-05-01",
+      "weather": "Sunny",
+      "activities": [
+        {
+          "time": "12:00",
+          "title": "Arrival in Mumbai & Transfer to The Taj Mahal Palace",
+          "description": "Arrive at Chhatrapati Shivaji Maharaj International Airport (BOM). Take a pre-paid taxi to The Taj Mahal Palace hotel in Colaba. Check in and freshen up.",
+          "location": "Chhatrapati Shivaji Maharaj International Airport (BOM) to Colaba",
+          "lat": 19.0876,
+          "long": 72.8776,
+          "cost": "₹300",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "14:00",
+          "title": "Explore Gateway of India",
+          "description": "Visit the iconic Gateway of India, a historical monument overlooking the Arabian Sea. Take photos and soak in the atmosphere.",
+          "location": "Gateway of India, Mumbai",
+          "lat": 18.922,
+          "long": 72.8347,
+          "cost": "₹0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "16:00",
+          "title": "Visit Chhatrapati Shivaji Maharaj Terminus (CST)",
+          "description": "Explore the UNESCO World Heritage Site, Chhatrapati Shivaji Maharaj Terminus (formerly Victoria Terminus), an architectural marvel.",
+          "location": "Chhatrapati Shivaji Maharaj Terminus, Mumbai",
+          "lat": 18.9402,
+          "long": 72.8347,
+          "cost": "₹20",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner at Leopold Cafe",
+          "description": "Enjoy dinner at Leopold Cafe, a historic restaurant known for its food and ambiance.",
+          "location": "Leopold Cafe, Colaba, Mumbai",
+          "lat": 18.922,
+          "long": 72.8347,
+          "cost": "₹700",
+          "sustainableAlternative": {
+            "title": "Dinner at a Local Thali Restaurant",
+            "description": "Dine at a local restaurant serving traditional vegetarian or non-vegetarian thalis, supporting local businesses.",
+            "cost": "₹500",
+            "ecoImpact": "Supports local businesses and reduces food miles."
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2025-05-02",
+      "weather": "Rainy",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Morning Walk at Marine Drive",
+          "description": "Enjoy a refreshing morning walk along Marine Drive, also known as the Queen's Necklace.",
+          "location": "Marine Drive, Mumbai",
+          "lat": 18.952,
+          "long": 72.8199,
+          "cost": "₹0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "11:00",
+          "title": "Visit the Mani Bhavan Gandhi Museum",
+          "description": "Explore the Mani Bhavan Gandhi Museum, a former residence of Mahatma Gandhi, showcasing his life and work.",
+          "location": "Mani Bhavan Gandhi Museum, Mumbai",
+          "lat": 18.9635,
+          "long": 72.8048,
+          "cost": "₹50",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at Britannia & Co.",
+          "description": "Have lunch at Britannia & Co., a Parsi restaurant famous for its berry pulao and other Irani dishes.",
+          "location": "Britannia & Co., Ballard Estate, Mumbai",
+          "lat": 18.9355,
+          "long": 72.8373,
+          "cost": "₹500",
+          "sustainableAlternative": {
+            "title": "Lunch at Local Udupi Restaurant",
+            "description": "Eat at an Udupi restaurant which serves local traditional cuisine which are made from locally sourced ingredients.",
+            "cost": "₹350",
+            "ecoImpact": "Promotes local food culture and reduces reliance on processed foods."
+          }
+        },
+        {
+          "time": "15:00",
+          "title": "Shopping at Colaba Causeway",
+          "description": "Enjoy street shopping at Colaba Causeway, known for its affordable clothing, accessories, and souvenirs.",
+          "location": "Colaba Causeway, Mumbai",
+          "lat": 18.922,
+          "long": 72.8347,
+          "cost": "₹0",
+          "sustainableAlternative": {
+            "title": "Support Local Artisans",
+            "description": "Opt for handicrafts made by local artisans instead of mass-produced items to support the local economy.",
+            "cost": "₹0",
+            "ecoImpact": "Promotes traditional skills and livelihoods."
+          }
+        },
+        {
+          "time": "18:00",
+          "title": "Travel to Airport",
+          "description": "Travel to Chhatrapati Shivaji Maharaj International Airport (BOM) for your return flight.",
+          "location": "Colaba to Chhatrapati Shivaji Maharaj International Airport (BOM)",
+          "lat": 19.0876,
+          "long": 72.8776,
+          "cost": "₹200",
+          "sustainableAlternative": null
+        }
+      ]
+    }
+  ]
+}

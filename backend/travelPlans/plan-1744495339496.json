@@ -1,0 +1,160 @@
+{
+  "title": "Mumbai Day Trip",
+  "destination": "Mumbai, India",
+  "dates": "1st May-2nd May, 2025",
+  "duration": "2 days",
+  "startDate": "2025-05-01",
+  "endDate": "2025-05-02",
+  "image": "/placeholder.svg?height=400&width=600",
+  "ecoScore": 4,
+  "emergencyContact": {
+    "name": "Mumbai Police",
+    "phone": "+91-22-22620111",
+    "email": "controlroom@mumbaipolice.org"
+  },
+  "travelDetails": {
+    "departureFlight": {
+      "airline": "Not Applicable",
+      "flightNumber": "N/A",
+      "departure": "2025-05-01T00:00:00",
+      "arrival": "2025-05-01T00:00:00",
+      "from": "Thane",
+      "to": "Cst, Mumbai, India"
+    },
+    "returnFlight": {
+      "airline": "Not Applicable",
+      "flightNumber": "N/A",
+      "departure": "2025-05-02T00:00:00",
+      "arrival": "2025-05-02T00:00:00",
+      "from": "Cst, Mumbai, India",
+      "to": "Thane"
+    },
+    "localTransport": {
+      "mode": "Train/Taxi/Local Bus",
+      "details": "Use the Mumbai local train for efficient travel, supplemented by taxis or local buses for specific destinations. Consider using ride-sharing apps."
+    }
+  },
+  "accommodation": {
+    "name": "Hotel Marine Plaza",
+    "address": "29, Marine Drive, Mumbai, Maharashtra 400020, India",
+    "checkIn": "2025-05-01",
+    "checkOut": "2025-05-02",
+    "amenities": [
+      "Swimming Pool",
+      "Free Wi-Fi",
+      "Restaurant",
+      "Bar",
+      "Spa",
+      "Fitness Center"
+    ]
+  },
+  "estimatedCost": {
+    "flights": "₹0",
+    "accommodation": "₹6000",
+    "activities": "₹1500",
+    "meals": "₹1500",
+    "transport": "₹500",
+    "misc": "₹500",
+    "total": "₹10000"
+  },
+  "packingSuggestions": [
+    "Light cotton clothes",
+    "Comfortable walking shoes",
+    "Sunscreen",
+    "Hat or cap",
+    "Sunglasses",
+    "Insect repellent",
+    "Basic toiletries",
+    "Reusable water bottle"
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2025-05-01",
+      "weather": "Sunny",
+      "activities": [
+        {
+          "time": "14:00",
+          "title": "Arrive in Mumbai & Check-in",
+          "description": "Arrive at Chhatrapati Shivaji Maharaj Terminus (CST) and check into Hotel Marine Plaza. Freshen up and get ready to explore.",
+          "location": "Chhatrapati Shivaji Maharaj Terminus (CST) to Hotel Marine Plaza",
+          "cost": "₹300",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "16:00",
+          "title": "Gateway of India & Taj Mahal Palace Hotel",
+          "description": "Visit the iconic Gateway of India and admire the architectural grandeur of the Taj Mahal Palace Hotel. Take a stroll around the area.",
+          "location": "Gateway of India, Mumbai",
+          "cost": "₹0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner at Leopold Cafe",
+          "description": "Enjoy a delicious meal at Leopold Cafe, a historic restaurant in Colaba known for its lively atmosphere and diverse menu.",
+          "location": "Leopold Cafe, Colaba",
+          "cost": "₹600",
+          "sustainableAlternative": {
+            "title": "Dinner at Local Family Restaurant",
+            "description": "Dine at a family-owned restaurant in Colaba that serves traditional Maharashtrian cuisine using locally sourced ingredients.",
+            "cost": "₹500",
+            "ecoImpact": "Supports local businesses and reduces carbon footprint associated with food transportation."
+          }
+        },
+        {
+          "time": "21:00",
+          "title": "Marine Drive Walk",
+          "description": "Take a leisurely walk along Marine Drive, also known as the Queen's Necklace, and enjoy the sea breeze and city lights.",
+          "location": "Marine Drive, Mumbai",
+          "cost": "₹0",
+          "sustainableAlternative": null
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2025-05-02",
+      "weather": "Sunny",
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "Visit Chhatrapati Shivaji Maharaj Museum",
+          "description": "Explore the Chhatrapati Shivaji Maharaj Museum to learn about Indian history and culture. Admire the diverse collection of artifacts and exhibits.",
+          "location": "Chhatrapati Shivaji Maharaj Museum, Fort",
+          "cost": "₹300",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch at Britannia & Co.",
+          "description": "Enjoy a Parsi meal at Britannia & Co., a legendary restaurant known for its Berry Pulao and other traditional Parsi dishes.",
+          "location": "Britannia & Co., Ballard Estate",
+          "cost": "₹600",
+          "sustainableAlternative": {
+            "title": "Pack a Picnic Lunch",
+            "description": "Prepare a picnic lunch with locally sourced and sustainable ingredients and enjoy it in a park or garden.",
+            "cost": "₹300",
+            "ecoImpact": "Reduces food waste from restaurants and supports local farmers and producers."
+          }
+        },
+        {
+          "time": "14:00",
+          "title": "Dhobi Ghat",
+          "description": "Visit Dhobi Ghat, an open-air laundry where clothes are washed by hand in a traditional manner. Witness the unique and fascinating process.",
+          "location": "Dhobi Ghat, Mahalaxmi",
+          "cost": "₹0",
+          "sustainableAlternative": null
+        },
+        {
+          "time": "16:00",
+          "title": "Departure from Mumbai",
+          "description": "Depart from Mumbai and return to Thane.",
+          "location": "Mumbai to Thane",
+          "cost": "₹200",
+          "sustainableAlternative": null
+        }
+      ]
+    }
+  ]
+}
