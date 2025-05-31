@@ -37,4 +37,4 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 // Default Route
 
 // // Export for Vercel
-module.exports = app;
+export default app;
