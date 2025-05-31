@@ -22,7 +22,7 @@ app.use(cors({
 connectDB();
 
 // Sample route
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.send('Hello from MERN backend!');
 });
 
@@ -39,9 +39,9 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Something broke!' });
 });
 
-const PORT = process.env.PORT || 8000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-// Default Route
+// const PORT = process.env.PORT || 8000;
+// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// // Default Route
 
 // // Export for Vercel
 export default app;
