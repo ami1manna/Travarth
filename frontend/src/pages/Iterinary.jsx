@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"
+import axios from "../services/axios";
 
 import {
   Globe,
@@ -63,19 +64,11 @@ export default function Itinerary({ }) {
     // console.log("Fetching itinerary with ID:", id);
     try {
       const token = localStorage.getItem("authToken");
-      const response = await fetch(`/api/travelplans/get/${id}`, {
-        method: "GET",
-        headers: {
-          "Authorization": `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await axios.get(`/api/travelplans/get/${id}`);
 
-      if (!response.ok) {
-        throw new Error("Failed to fetch itinerary");
-      }
+      
 
-      const itineraryData = await response.json();
+      const itineraryData = await response.data;
       setItinerary(itineraryData);
       // console.log("ItineraryData", itineraryData);
       // console.log("Itinerary", itinerary);

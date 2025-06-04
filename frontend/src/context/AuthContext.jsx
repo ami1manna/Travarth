@@ -12,9 +12,7 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => {
         const token = localStorage.getItem("authToken");
         if (token) {
-            axios.get("/api/auth/profile", {
-                headers: { Authorization: `Bearer ${token}` }
-            })
+            axios.get("/api/auth/profile")
             .then(response => setUser(response.data.user))
             .catch(() => {
                 localStorage.removeItem("authToken");
@@ -47,9 +45,7 @@ const login = async (email, password) => {
         const { token } = response.data;
         localStorage.setItem("authToken", token);
 
-        const profile = await axios.get("/api/auth/profile", {
-            headers: { Authorization: `Bearer ${token}` }
-        });
+        const profile = await axios.get("/api/auth/profile");
 
         setUser(profile.data.user);
         toast.success("Logged in successfully!");
@@ -71,9 +67,7 @@ const login = async (email, password) => {
 
             localStorage.setItem("authToken", token);
 
-            const profile = await axios.get("/api/auth/profile", {
-                headers: { Authorization: `Bearer ${token}` }
-            });
+            const profile = await axios.get("/api/auth/profile");
 
             setUser(profile.data.user);
             toast.success("Account created successfully!");
@@ -88,9 +82,7 @@ const login = async (email, password) => {
         const token = localStorage.getItem("authToken");
         try {
             if (token) {
-                await axios.post("/api/auth/logout", {}, {
-                    headers: { Authorization: `Bearer ${token}` }
-                });
+                await axios.post("/api/auth/logout");
             }
             toast.success("Logged out successfully!");
         } catch (error) {

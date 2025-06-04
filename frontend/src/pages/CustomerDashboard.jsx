@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Calendar, MapPin, Clock, Shield, Leaf, RefreshCw, Filter, Plus, ChevronRight, Info } from 'lucide-react';
+import axios from './../services/axios';
 
 const CustomerDashboard = () => {
   const [travelPlans, setTravelPlans] = useState([]);
@@ -18,19 +19,11 @@ const CustomerDashboard = () => {
       // Get the auth token from localStorage or your auth state management
       const authToken = localStorage.getItem('authToken'); 
       
-      const response = await fetch('api/travelplans/get-all-travel-plans', {
-        headers: {
-          'Authorization': `Bearer ${authToken}`,
-          'Content-Type': 'application/json'
-        }
-      });
+      const response = await axios.get('api/travelplans/get-all-travel-plans');
+      console.log(response.data);
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-
-      const data = await response.json();
-      setTravelPlans(data);
+     
+      setTravelPlans(response.data);
       setError(null);
     } catch (err) {
       setError('Failed to fetch travel plans. ' + err.message);
