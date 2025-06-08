@@ -251,9 +251,8 @@ npm run test:e2e
 
 | Feature | Desktop | Mobile |
 |---------|---------|--------|
-| Dashboard | ![image](https://github.com/user-attachments/assets/5e7a665e-fd8e-49f6-be16-736d3653a103)| ![image](https://github.com/user-attachments/assets/a5008569-c78c-4dc2-b01f-2db4684b6eb9)
-|
-| Trip Planning | ![Planning](screenshots/planning.png) | ![Mobile Planning](screenshots/mobile-planning.png) |
+| Dashboard | ![image](https://github.com/user-attachments/assets/5e7a665e-fd8e-49f6-be16-736d3653a103)| ![image](https://github.com/user-attachments/assets/7dea9932-7884-4939-a211-f0c0020be3c4)|
+| Trip Planning |![image](https://github.com/user-attachments/assets/a147ab39-b6d1-42e2-b73b-fffd2269d01e)| ![image](https://github.com/user-attachments/assets/ef597403-cca2-4af2-a509-98b9115ab523)|
 | AI Assistant | ![Chatbot](screenshots/chatbot.png) | ![Mobile Chat](screenshots/mobile-chat.png) |
 
 ## 🤝 Contributing
