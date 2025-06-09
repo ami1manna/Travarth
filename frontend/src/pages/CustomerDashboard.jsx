@@ -12,32 +12,29 @@ const CustomerDashboard = () => {
   const [viewMode, setViewMode] = useState('all'); // 'all', 'upcoming', 'past'
 
   useEffect(() => {
-    fetchTravelPlans();
+    const fetchTrips = async () => {
+      try {
+        const response = await axios.get('/api/travelplans/get-all-travel-plans');
+        setTravelPlans(response.data);
+        // Add a small delay to ensure smooth transition
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 1000);
+      } catch (error) {
+        setError('Failed to fetch trips');
+        setIsLoading(false);
+      }
+    };
+
+    fetchTrips();
   }, []);
 
-  const fetchTravelPlans = async () => {
-    try {
-      setIsLoading(true);
-      // Get the auth token from localStorage or your auth state management
-      const authToken = localStorage.getItem('authToken'); 
-      
-      const response = await axios.get('api/travelplans/get-all-travel-plans');
-      console.log(response.data);
-
-     
-      setTravelPlans(response.data);
-      setError(null);
-    } catch (err) {
-      setError('Failed to fetch travel plans. ' + err.message);
-      console.error('Error fetching travel plans:', err);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   const formatDate = (dateString) => {
-    const options = { year: 'numeric', month: 'short', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString(undefined, options);
+    return new Date(dateString).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    });
   };
 
   const addPlan = () => {
@@ -98,10 +95,16 @@ const CustomerDashboard = () => {
 
   if (error) {
     return (
-      <div className="pt-16 min-h-screen bg-gray-50">
-        <div className="container mx-auto px-4 py-8">
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
-            {error}
+      <div className="pt-2 min-h-screen bg-gray-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+            <p>{error}</p>
+            <button 
+              onClick={() => window.location.reload()} 
+              className="mt-2 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors"
+            >
+              Try Again
+            </button>
           </div>
         </div>
       </div>
@@ -128,15 +131,18 @@ const CustomerDashboard = () => {
   }
 
   return (
-    <div className="pt-16 min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
+    <div className="pt-2 min-h-screen bg-gray-50">
+      <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800">My Trips</h1>
+          <div>
+            <h1 className="text-3xl font-bold text-gray-800">My Trips</h1>
+            <p className="text-gray-600 mt-1">Manage and view your travel plans</p>
+          </div>
           <Link
             to="/create-trip"
-            className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors"
+            className="px-6 py-3 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors flex items-center gap-2"
           >
-            Plan New Trip
+            <span>Plan New Trip</span>
           </Link>
         </div>
 
@@ -275,19 +281,45 @@ const CustomerDashboard = () => {
                   to={`/iterinary/${plan._id}`}
                   className="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
                 >
-                  <div className="aspect-w-16 aspect-h-9">
+                  <div className="relative">
                     <img
                       src={plan.image || "https://via.placeholder.com/400x225"}
                       alt={plan.title}
                       className="w-full h-48 object-cover"
                     />
+                    {plan.ecoScore && (
+                      <div className="absolute top-3 right-3 bg-green-500 text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
+                        <Leaf className="w-4 h-4" />
+                        <span>Eco Score: {plan.ecoScore}</span>
+                      </div>
+                    )}
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  <div className="p-5">
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
                       {plan.title}
                     </h3>
-                    <p className="text-gray-600 mb-2">{plan.destination}</p>
-                    <p className="text-gray-500">{formatDate(plan.startDate)} - {formatDate(plan.endDate)}</p>
+                    <div className="space-y-2">
+                      <div className="flex items-center text-gray-600">
+                        <MapPin className="w-4 h-4 mr-2 text-green-500" />
+                        <span>{plan.destination}</span>
+                      </div>
+                      <div className="flex items-center text-gray-600">
+                        <Calendar className="w-4 h-4 mr-2 text-green-500" />
+                        <span>{formatDate(plan.startDate)} - {formatDate(plan.endDate)}</span>
+                      </div>
+                      <div className="flex items-center text-gray-600">
+                        <Clock className="w-4 h-4 mr-2 text-green-500" />
+                        <span>{plan.duration}</span>
+                      </div>
+                    </div>
+                    {plan.emergencyContact && (
+                      <div className="mt-4 p-3 bg-gray-50 rounded-lg">
+                        <div className="flex items-center text-gray-600">
+                          <Shield className="w-4 h-4 mr-2 text-green-500" />
+                          <span className="text-sm">Emergency Contact: {plan.emergencyContact.name}</span>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </Link>
               ))}

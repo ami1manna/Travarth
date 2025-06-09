@@ -54,7 +54,7 @@ export default function Login() {
                 </svg>
               </div>
             </div>
-            <div className="font-bold text-lg">EcoTravelAI</div>
+            <div className="font-bold text-lg">TravArth</div>
           </Link>
 
           <div className="flex items-center gap-4">

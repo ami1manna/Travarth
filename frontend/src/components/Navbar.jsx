@@ -40,10 +40,7 @@ export default function Navbar() {
             </div>
           </div>
           <div>
-            <div className="font-bold text-xl">Eco</div>
-            <div className="font-bold text-xl flex items-center">
-              Travel<span className="text-green-500 ml-1">AI</span>
-            </div>
+            <div className="font-bold text-xl">TravArth</div>
           </div>
         </Link>
 

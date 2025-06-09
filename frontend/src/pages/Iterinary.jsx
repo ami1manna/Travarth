@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import axios from "../services/axios";
+import LoadingScreen from "../components/LoadingScreen";
 
 import {
   Globe,
@@ -60,6 +61,8 @@ export default function Itinerary({ }) {
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [selectedLat, setSelectedLat] = useState(null);
   const [selectedLong, setSelectedLong] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const fetchItinerary = async () => {
     // console.log("Fetching itinerary with ID:", id);
@@ -74,9 +77,15 @@ export default function Itinerary({ }) {
       // console.log("ItineraryData", itineraryData);
       // console.log("Itinerary", itinerary);
 
+      // Add a small delay to ensure smooth transition
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
 
     } catch (error) {
       console.error("Error fetching itinerary:", error);
+      setError("Failed to fetch itinerary details");
+      setIsLoading(false);
     }
   };
 
@@ -84,10 +93,39 @@ export default function Itinerary({ }) {
     fetchItinerary();
   }, [id]); // Only re-fetch if the id changes
 
-  if (!itinerary) {
-    return <div className="pt-16">Loading...</div>;
+  if (isLoading) {
+    return <LoadingScreen />;
   }
 
+  if (error) {
+    return (
+      <div className="pt-2 min-h-screen bg-gray-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+            <p>{error}</p>
+            <button 
+              onClick={() => window.location.reload()} 
+              className="mt-2 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors"
+            >
+              Try Again
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (!itinerary) {
+    return (
+      <div className="pt-2 min-h-screen bg-gray-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded">
+            No itinerary found
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   // Enhanced weather data from the original JSON
   const weatherData = {
@@ -340,7 +378,7 @@ export default function Itinerary({ }) {
                     <path d="m4.5 9 5-5"/>
                   </svg>
                 </div>
-                <h1 class="text-xl font-bold">TravelEaseAI - Your itinerary is ready!</h1>
+                <h1 class="text-xl font-bold">TravArth Ai Your itinerary is ready!</h1>
               </div>
               <div class="flex gap-2">
                 <button onclick="window.print()" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 flex items-center">
@@ -876,13 +914,13 @@ export default function Itinerary({ }) {
   // console.log(cleanedDestination)
 
   return (
-    <div className="pt-16">
+    <div className="pt-2">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-6 mb-8">
           <div className="md:w-2/3">
             <div className="mb-6">
               <Link
-                to="/dashboard/customer"
+                to="/my-trip"
                 className="text-sm text-gray-500  hover:text-gray-900  mb-2 inline-block"
               >
                 ← Back to Dashboard
