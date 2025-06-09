@@ -1,7 +1,8 @@
 import React, { useState, useContext } from "react";
-import { Mail, Lock, Globe, Sun } from "lucide-react";
+import { Mail, Lock, Globe, Sun, Loader2 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext"; // ensure correct path
+import { toast } from "react-toastify";
 
 export default function Login() {
   const [role, setRole] = useState("customer");
@@ -14,6 +15,7 @@ export default function Login() {
   });
 
   const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,11 +23,15 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     try {
       await login(formData.email, formData.password);
+      toast.success("Login successful!");
       navigate("/"); // redirect to homepage/dashboard
     } catch (err) {
-      setError("Invalid email or password.");
+      toast.error(err.response?.data?.message || "Login failed");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -154,9 +160,17 @@ export default function Login() {
 
               <button
                 type="submit"
-                className="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-md"
+                disabled={isLoading}
+                className="w-full bg-green-600 text-white py-2.5 px-4 rounded-md hover:bg-green-700 transition-colors disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 font-medium"
               >
-                Sign In
+                {isLoading ? (
+                  <>
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                    <span>Signing in...</span>
+                  </>
+                ) : (
+                  "Sign In"
+                )}
               </button>
             </form>
           </div>
