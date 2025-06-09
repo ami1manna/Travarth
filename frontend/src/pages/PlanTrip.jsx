@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import { format, differenceInDays } from "date-fns"
 import { useNavigate } from "react-router-dom";
+import axios from "./../services/axios";
 
 // Replace Lucide icons with emoji representations
 const ICONS = {
@@ -295,22 +296,15 @@ export default function PlanTripPage() {
     
     try {
       // Directly store the trip data without showing flight options
-      const response = await fetch("/api/travelplans/store", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${token}`
-        },
-        body: JSON.stringify(dataToSend)
-      });
+      const response = await axios.post("/api/travelplans/store", dataToSend);
 
-      const result = await response.json();
+      const result = response.data;
       console.log("Server Response:", result);
       
-      if (response.ok) {
+      if (result && result.data && result.data._id) {
         // Extract the ID from the response data
         const itineraryId = result.data._id;
-        
+        console.log("Itinerary ID:", itineraryId);
         // Navigate to the itinerary page with the ID
         navigate(`/iterinary/${itineraryId}`);
       } else {

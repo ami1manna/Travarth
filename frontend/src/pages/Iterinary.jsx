@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import axios from "../services/axios";
 
@@ -45,6 +45,7 @@ const WeatherBadgeProps = {
 
 export default function Itinerary({ }) {
   const { id } = useParams();
+  console.log("Itinerary ID:", id);
   // console.log(id);
 
   const [showSustainableAlternatives, setShowSustainableAlternatives] = useState(false);
@@ -78,10 +79,13 @@ export default function Itinerary({ }) {
       console.error("Error fetching itinerary:", error);
     }
   };
-  fetchItinerary();
+
+  useEffect(() => {
+    fetchItinerary();
+  }, [id]); // Only re-fetch if the id changes
 
   if (!itinerary) {
-    return <div>No itinerary found</div>;
+    return <div className="pt-16">Loading...</div>;
   }
 
 
@@ -872,13 +876,8 @@ export default function Itinerary({ }) {
   // console.log(cleanedDestination)
 
   return (
-    <div className="min-h-screen bg-white  text-gray-900 ">
-      {/* Header */}
-
-      <header className="pt-20">
-
-      </header>
-      <main className="container mx-auto px-4 py-8">
+    <div className="pt-16">
+      <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-6 mb-8">
           <div className="md:w-2/3">
             <div className="mb-6">
@@ -1381,7 +1380,7 @@ export default function Itinerary({ }) {
             </div>
           </div>
         </div>
-      </main>
+      </div>
 
       {/* Location Dialog */}
       {showLocationDialog && (

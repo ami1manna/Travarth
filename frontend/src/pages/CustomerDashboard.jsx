@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Calendar, MapPin, Clock, Shield, Leaf, RefreshCw, Filter, Plus, ChevronRight, Info } from 'lucide-react';
 import axios from './../services/axios';
+import LoadingScreen from '../components/LoadingScreen';
+import { Link } from 'react-router-dom';
 
 const CustomerDashboard = () => {
   const [travelPlans, setTravelPlans] = useState([]);
@@ -91,28 +93,17 @@ const CustomerDashboard = () => {
   );
 
   if (isLoading) {
-    return (
-      <div className="flex items-center justify-center h-64 bg-white rounded-lg shadow-sm border border-gray-100">
-        <div className="text-center">
-          <div className="w-12 h-12 border-4 border-green-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
-          <p className="mt-4 text-gray-600 font-medium">Loading your travel plans...</p>
-        </div>
-      </div>
-    );
+    return <LoadingScreen />;
   }
 
   if (error) {
     return (
-      <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-l-red-500">
-        <h2 className="text-xl font-semibold text-gray-800 mb-2">Unable to Load Travel Plans</h2>
-        <p className="text-gray-600 mb-4">{error}</p>
-        <button 
-          className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 flex items-center transition shadow-sm"
-          onClick={() => fetchTravelPlans()}
-        >
-          <RefreshCw className="w-4 h-4 mr-2" />
-          Retry
-        </button>
+      <div className="pt-16 min-h-screen bg-gray-50">
+        <div className="container mx-auto px-4 py-8">
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+            {error}
+          </div>
+        </div>
       </div>
     );
   }
@@ -137,10 +128,18 @@ const CustomerDashboard = () => {
   }
 
   return (
-    
-  
-      
-      <div className="container mx-auto px-4  py-8 pt-14">
+    <div className="pt-16 min-h-screen bg-gray-50">
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex justify-between items-center mb-8">
+          <h1 className="text-3xl font-bold text-gray-800">My Trips</h1>
+          <Link
+            to="/create-trip"
+            className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors"
+          >
+            Plan New Trip
+          </Link>
+        </div>
+
         {upcomingTrips.length > 0 && (
           <div className="mb-10">
             <div className="flex justify-between items-center mb-4">
@@ -271,76 +270,32 @@ const CustomerDashboard = () => {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredPlans.map((plan) => (
-                <div 
-                  key={plan._id} 
-                  className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-200"
+                <Link
+                  key={plan._id}
+                  to={`/iterinary/${plan._id}`}
+                  className="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
                 >
-                  <div className="h-48 overflow-hidden relative">
-                    <img 
-                      src={plan.image || "/api/placeholder/400/320"} 
-                      alt={plan.destination} 
-                      className="w-full h-full object-cover"
+                  <div className="aspect-w-16 aspect-h-9">
+                    <img
+                      src={plan.image || "https://via.placeholder.com/400x225"}
+                      alt={plan.title}
+                      className="w-full h-48 object-cover"
                     />
-                    <div className="absolute top-3 right-3">
-                      <div className="bg-green-600 text-white rounded-lg px-2 py-1 text-xs font-medium flex items-center shadow-sm">
-                        <Leaf className="w-3 h-3 mr-1" />
-                        Eco Score: {plan.ecoScore}/10
-                      </div>
-                    </div>
-                    {new Date(plan.startDate) > new Date() && (
-                      <div className="absolute bottom-3 left-3">
-                        <div className="bg-white text-green-700 rounded-lg px-2 py-1 text-xs font-medium shadow-sm">
-                          In {calculateDaysUntil(plan.startDate)} days
-                        </div>
-                      </div>
-                    )}
                   </div>
-                  
-                  <div className="p-5">
-                    <h2 className="text-lg font-semibold text-gray-800 mb-3">{plan.title}</h2>
-                    
-                    <div className="space-y-2 mb-4">
-                      <div className="flex items-center text-gray-600">
-                        <MapPin className="w-4 h-4 mr-2 text-green-600" />
-                        <span>{plan.destination}</span>
-                      </div>
-                      
-                      <div className="flex items-center text-gray-600">
-                        <Calendar className="w-4 h-4 mr-2 text-green-600" />
-                        <span>{formatDate(plan.startDate)} - {formatDate(plan.endDate)}</span>
-                      </div>
-                      
-                      <div className="flex items-center text-gray-600">
-                        <Clock className="w-4 h-4 mr-2 text-green-600" />
-                        <span>{plan.duration}</span>
-                      </div>
-                    </div>
-                    
-                    {plan.emergencyContact && (
-                      <div className="mb-4 flex items-start p-2 bg-gray-50 rounded-lg">
-                        <Shield className="w-4 h-4 mr-2 text-green-600 mt-1" />
-                        <div>
-                          <p className="text-xs text-gray-500">Emergency Contact:</p>
-                          <p className="text-sm text-gray-700 font-medium">{plan.emergencyContact.name}</p>
-                        </div>
-                      </div>
-                    )}
-                    
-                    <button 
-                      onClick={() => goToTripDetails(plan._id)} 
-                      className="mt-2 w-full py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition flex items-center justify-center shadow-sm"
-                    >
-                      View Details
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </button>
+                  <div className="p-4">
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                      {plan.title}
+                    </h3>
+                    <p className="text-gray-600 mb-2">{plan.destination}</p>
+                    <p className="text-gray-500">{formatDate(plan.startDate)} - {formatDate(plan.endDate)}</p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           )}
         </div>
       </div>
-     
+    </div>
   );
 };
 
