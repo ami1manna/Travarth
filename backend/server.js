@@ -44,4 +44,9 @@ app.use((err, req, res, next) => {
 // // Default Route
 
 // // Export for Vercel
-export default app;
+// At the end of server.js, replace the export with:
+module.exports = (req, res) => {
+  // This allows Vercel to handle the request
+  return app(req, res);
+}
+// export default app;
