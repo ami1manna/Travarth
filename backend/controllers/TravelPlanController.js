@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 
 const geminiApiKey = process.env.GEMINI_API;
 const genAI = new GoogleGenerativeAI(geminiApiKey);
-let genAIModel = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+let genAIModel = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
 import fs from 'fs/promises';
 import path from 'path';
